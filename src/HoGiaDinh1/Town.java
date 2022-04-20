@@ -32,7 +32,7 @@ public class Town implements Interface<Family>{
     @Override
     public void display() {
         for (int i = 0; i < familyList.size(); i++) {
-            System.out.println(familyList.get(i));
+           familyList.get(i).display();
         }
         System.out.println("--------------------");
     }
@@ -41,4 +41,14 @@ public class Town implements Interface<Family>{
     public int findByName(int id) {
         return 0;
     }
+
+    public void maxSoThanhVien(){
+        int max=familyList.get(0).getSoThanhVien();
+        for (int i = 0; i <familyList.size()  ; i++) {
+            if(max < familyList.get(i).getSoThanhVien()){
+                max = familyList.get(i).getSoThanhVien();
+            }
+        }
+    }
+
 }

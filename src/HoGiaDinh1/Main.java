@@ -17,10 +17,19 @@ public class Main {
      family1.add(new Person1("ha1",12,6));
      family.display();
 
-//     family1.findByName(1);
-////     family1.display();
+     family1.findByName(1);
+     family1.display();
 
       family.printSmallAge();
+
+      family.edit(1,new Person1("long",20,111));
+      family.display();
+
+      Town town = new Town();
+      town.add(family);
+      town.add(family1);
+      town.display();
+
 
 
 
