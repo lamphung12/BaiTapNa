@@ -1,17 +1,17 @@
-package BaiTapOOP.Bai1;
+package HoGiaDinh1;
 
-public class Person {
+public class Person1 {
     private String name;
     private int age ;
-    private int numberCMND;
+    private int id;
 
-    public Person() {
+    public Person1() {
     }
 
-    public Person(String name, int age, int numberCMND) {
+    public Person1(String name, int age, int id) {
         this.name = name;
         this.age = age;
-        this.numberCMND = numberCMND;
+        this.id = id;
     }
 
     public String getName() {
@@ -30,12 +30,12 @@ public class Person {
         this.age = age;
     }
 
-    public int getNumberCMND() {
-        return numberCMND;
+    public int getId() {
+        return id;
     }
 
-    public void setNumberCMND(int numberCMND) {
-        this.numberCMND = numberCMND;
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
@@ -43,8 +43,7 @@ public class Person {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", numberCMND=" + numberCMND +
+                ", numberCMND=" + id +
                 '}';
     }
-
 }
